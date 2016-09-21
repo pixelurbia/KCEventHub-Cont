@@ -1,0 +1,21 @@
+/* *
+ * DO NOT MODIFY THIS FILE. IT'S OVERRIDDEN WHEN INITIALISING
+ * Instead create another stylesheet and load it in your custom template
+ * 
+ * The following snippet of CSS styles the default templates and the example template */
+
+#field-1, #field-201, #field-208, #field-200 {display:none!important;}
+
+.entry-view-field-value { height: auto; display: block; overflow: hidden; margin-bottom: 10px; }
+.no-style {margin-top:5px;}
+.checkbox {width:20px; position:relative; top:4px;}
+
+ .strong { background: #eee; padding: 4px; width: 30%; float: left!important; overflow: hidden; display: block; font-size: 14px; margin-right:10px;} 
+ .value {padding:4px; width: 60%; float: left; display: block; overflow: hidden; background: white; font-size: 13px; }
+ .cert {font-size: 12px; }
+ h2#details {font-size: 22px; text-transform: uppercase; border-bottom: 0px; text-align: center;} 
+ h2 {font-size: 18px; }
+ .formlogo {width:70px; margin-top:10px; float:left; margin-right:300px;}
+    .phlogo {    margin-top:5px; width: 140px; float: right; margin-left:30px;} 
+ .address {float:right; padding-top:30px;}
+ li {list-style-type: none;}

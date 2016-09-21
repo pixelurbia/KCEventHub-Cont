@@ -1,0 +1,77 @@
+/*
+Error: Undefined mixin 'span-columns'.
+        on line 9 of /Users/andrew/Documents/Client Sites/city-permit-site/wp-content/themes/cityPermit/stylesheets/sass/citypermit/_overview.scss, in `span-columns'
+        from line 9 of /Users/andrew/Documents/Client Sites/city-permit-site/wp-content/themes/cityPermit/stylesheets/sass/citypermit/_overview.scss
+
+4: 
+5: 
+6: .overview { 
+7:   .content { margin:0 auto; float:none;}
+8:   
+9:   .over-box {  @include span-columns(12); float:none; border-radius:3px; padding:3% 9% 3% 5%; margin-bottom:10px; background:$lightblue;
+10:     &:hover {border:none!important;}
+11:     h2 {background:none;}
+12:     .top {background:url(../images/faq-arrow.png) no-repeat $lightblue center right; position: relative; cursor:pointer!important; border-radius: 5px; background-size: 4%; background-position: 97%;}
+13:     .top.active { background:url(../images/faq-horz-arrow.png) no-repeat $lightblue center right; background-position: 97% 8%; background-size: 2.5%;}
+14:     .bottom { display: none; width:100%; }
+
+Backtrace:
+/Users/andrew/Documents/Client Sites/city-permit-site/wp-content/themes/cityPermit/stylesheets/sass/citypermit/_overview.scss:9:in `span-columns'
+/Users/andrew/Documents/Client Sites/city-permit-site/wp-content/themes/cityPermit/stylesheets/sass/citypermit/_overview.scss:9
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `with_mixin'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:268:in `render'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:415:in `run'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Users/andrew/Downloads/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'span-columns'.\A         on line 9 of /Users/andrew/Documents/Client Sites/city-permit-site/wp-content/themes/cityPermit/stylesheets/sass/citypermit/_overview.scss, in `span-columns'\A         from line 9 of /Users/andrew/Documents/Client Sites/city-permit-site/wp-content/themes/cityPermit/stylesheets/sass/citypermit/_overview.scss\A \A 4: \A 5: \A 6: .overview { \A 7:   .content { margin:0 auto; float:none;}\A 8:   \A 9:   .over-box {  @include span-columns(12); float:none; border-radius:3px; padding:3% 9% 3% 5%; margin-bottom:10px; background:$lightblue;\A 10:     &:hover {border:none!important;}\A 11:     h2 {background:none;}\A 12:     .top {background:url(../images/faq-arrow.png) no-repeat $lightblue center right; position: relative; cursor:pointer!important; border-radius: 5px; background-size: 4%; background-position: 97%;}\A 13:     .top.active { background:url(../images/faq-horz-arrow.png) no-repeat $lightblue center right; background-position: 97% 8%; background-size: 2.5%;}\A 14:     .bottom { display: none; width:100%; }"; }

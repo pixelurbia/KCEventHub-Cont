@@ -1,0 +1,7 @@
+If you have previous installation of AIOSC and you want to update it to the newest version,
+copy all files from package to wp-content/plugins/di-aiosc EXCEPT "upload" directory, if you want
+to keep your previously uploaded files.
+
+- Once files are updated, go to your WordPress dashboard and navigate to "Plugins".
+- Find "AIO Support Center" and press "Deactivate"
+- After plugin is deactivate, press "Activate" to re-activate it and you are ready to go.

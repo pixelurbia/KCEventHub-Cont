@@ -1,0 +1,61 @@
+//COLOR
+$white: #fff;
+$offwhite:#e0e0d2;
+$grey:#EAE9E6;
+$darkgrey: #4a4a4a;
+$lightgray:#a9a9a9;
+$black: #000;
+$fieldgray: #464646;
+$pink:#f06274;
+$purple:#a200ff;
+$red:#dd0063;
+$yellow:#e8d21b;
+$green:#42bc00;
+
+$darkorange:#f57d23;
+$lightorange:#f5a523;
+$darkblue:#0e51c7;
+$lightblue:#498fe1;
+$navyblue:#072466;
+$type: #5c5b5c;
+
+
+//FONTS
+$ops: 'Open Sans', sans-serif;
+
+@mixin display {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@mixin paragraph {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {   font-size: 62.5%; /* Sets up the Base 10 stuff */  }
+body { background: $grey; @include paragraph; font-size: 14px; font-size: 1.4rem; height:auto!important; -webkit-backface-visibility: hidden; }
+
+//mixins
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+/*STYLES FOR MOBILE MENU TO X */
+$button-size : 2.5rem; 
+$transition: .3s; // increase this to see the transformations in slow-motion
+ 
+
+// Media Query sizes  
+$phone:568px;
+$ipad:1080px;
+$horz:1170px;
+
+.notification {  padding: 3%; background: #498fe1; float: left; width: 75%; position: absolute; font-size: 23px; text-align: center; border-radius: 5px; left: 0; right: 0; margin: 4% auto; color: white; opacity: 0.9;}
+.admin-tools {  width: 100%; height: 20px; background: $lightblue; 
+a { color:$white;   margin: 3px 10px 0px 10px; display: block; float: left; font-size: 12px; font-size: 1.2rem; }}
+// @include media($phone) {}
+// @include media($ipad) {}
+
+
+.aiosc-search-box, .aiosc-filters-container {display:none;} 
+.wp-list-table {background:$white; width:100%; }
+
+#faqSearch {  width: 100% !important; height: 61px; border: 0px; padding-left: 20px !important; border-radius: 3px;   line-height: 16px;}

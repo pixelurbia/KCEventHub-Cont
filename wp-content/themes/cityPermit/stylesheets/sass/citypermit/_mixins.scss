@@ -1,0 +1,74 @@
+@mixin font-size($n) {
+	font-size: $n + px; font-size: ($n / 10) + rem;
+}
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+@mixin full {
+	@include span-columns(12);
+}
+
+
+@mixin two-third {
+	@include span-columns(8);
+	@include media ($tablet){
+		@include span-columns(8);
+	} 
+	@include media ($mobile){
+	@include span-columns(12);
+
+	}
+}
+@mixin half {
+	@include span-columns(6);
+	@include media ($tablet){
+		@include span-columns(12);
+	} 
+	@include media ($mobile){
+	@include span-columns(12);
+	}
+}
+@mixin quart {
+	@include span-columns(4);
+	@include media ($tablet) {
+		@include span-columns(12);
+	}
+	@include media ($mobile) {
+		@include span-columns(12);
+	}
+}
+
+@mixin forth {
+	@include span-columns(2.7);
+	@include media ($tablet) {
+		@include span-columns(3.7);
+  		margin-right: 10px;
+	}
+	@include media ($mobile) {
+		@include span-columns(12);
+	}
+}
+
+@mixin third {
+	@include span-columns(3);
+	@include media ($tablet) {
+		@include span-columns(6);
+		margin-right: 0px;
+	}
+	@include media ($mobile) {
+		@include span-columns(12)
+	}
+}
+
+@mixin two {
+	@include span-columns(2);
+	@include media ($tablet) {
+			@include span-columns(3);
+	}
+	@include media ($mobile){
+		@include span-columns(12);
+	}
+}

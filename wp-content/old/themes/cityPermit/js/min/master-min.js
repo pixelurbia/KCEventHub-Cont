@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$("<div />").append($(".gf_page_steps").clone()).html();$(".gf_page_steps").hide(),$(".formNav").append(t),$(function(){$("input").each(function(){var t=$(this).val();$(this).focus(function(){$(this).val()==t&&$(this).val("")}),$(this).blur(function(){""==$(this).val()&&$(this).val(t)})})})});

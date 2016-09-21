@@ -1,0 +1,165 @@
+//Home Page Styles
+//City Permit Project
+@import 'global';
+
+img {transition: all 0.5s ease; }
+.user_form { @include span-columns(6); float:none; margin:0 auto; margin-top:5%; 
+.btn {margin:3% auto;}}
+.resetpass {  line-height: normal; width: 100% !important; height: 61px; border: 0px; padding-left: 20px !important; border-radius: 3px;}
+
+.single-event { height:auto;
+  h3 {margin:10px 0px 10px 0px}
+ul {  @include span-columns(6); padding:10px;float:none; border-radius:3px;   margin: -30px 0px 0px 0px; background:$white;  border-top:1px solid $white;  border-bottom:1px solid $white;  border-right:1px solid $white; transition: all 0.5s ease; position:relative;
+ @include media ($mobile) { @include span-columns(12); margin:0px; } 
+  li { margin-bottom:5px;}
+ }
+}
+.map-contain {  margin:5% 20px 20px 20px; width: 40%; overflow: hidden; float: right; max-height:400px;
+  @include media ($mobile) { @include span-columns(11); float:none; margin:5%; } 
+  img {width:100%;}}
+
+ .img-contain { height:280px; overflow:hidden; width:100%; position:relative; 
+  .img-cover {background:url(../images/imgdark.png) bottom left repeat-x; width:100%; height:100%; position:absolute; left:0; right:0; top:0; bottom:0;}
+  h1 {position: absolute; width: 75%; left: 0; right: 0; margin: 0 auto; bottom: 42px; text-shadow:$darkgrey 0px 0px 7px; color:$white!important;}
+    .raceimg {width:100%; height:400px; transition: all 0.5s ease; margin-left:0; background:url(../images/bodybg.png);   background-position: 0px -320px;}
+    img {width:100%; height:auto; transition: all 0.5s ease; margin-left:0; }
+  }
+
+.overview { 
+	.event {overflow:hidden; margin-top:10px;}}
+
+.events-page {
+
+      select {   width: 189px !important; float: right; @include font-size(1.3); border-radius: 0px; height: 41px; color: #333333; display: block; line-height: 28px; padding-left: 12px; border: solid 1px #eee; margin-top: -14px; background: white url("../images/ddbtn.png") 137px -5px no-repeat; -webkit-appearance: none; -moz-appearance: none; text-indent: 1px;
+      @include media ($mobile){ margin-top:0px; }}
+
+
+.statusbar { width:auto; float:right; margin-right:30px;
+  .dl {margin-right:5px!important;}
+}
+
+  .sorting {padding:0px 0px 4% 0px; margin-bottom:15px; 
+    .btn.right {    margin: -19px 0px 0px 0px;  }
+    @include media ($mobile) {display:none;}
+    .ASC i {background-position:0px 0px; transition: all 0.5s ease;}
+    .DESC i {background-position:0px -16px; transition: all 0.5s ease;}
+    h6 {float:left; @include font-size(1.2); margin-right:2%; }
+    h5 {float:left; @include font-size(1.2); margin-right:2%; cursor:pointer!important;
+      @include media ($tablet) { @include font-size(1.4); margin-right:4%;}
+            i {  background:url(../images/arrow.png) 0px 0px no-repeat; float:right; transition: all 0.5s ease;  width: 16px; background-size: 16px 25px;  height: 7px; margin: 2px 0px 0px 8px;}}}
+
+  .opaq {color:$lightgray; transition: all 0.5s ease; } 
+  .sidebar {margin:11% 0px 0px 0px!important; font-weight:100;
+    @include media ($mobile) {display:none;}
+      h5 {font-weight:100; @include font-size(1.2); margin:0px 0px 10px 0px;}}
+
+  .row, .contentwrap { @include span-columns(11); float:none; }
+  .content { margin:0 auto; float:none;}
+  .events-col {@include two-third; }
+  .event.saved {border-left: 5px solid purple;
+    .top {padding: 2% 0% 0% 4%;}
+    a {  padding: 0px 0px 3% 4%;}}
+  .event {  @include span-columns(12); float:none; border-radius:3px; margin-bottom:10px; background:$white;  border-top:1px solid $white;  border-bottom:1px solid $white;  border-right:1px solid $white; transition: all 0.5s ease; position:relative; 
+    a {color:$lightblue; cursor:pointer; z-index:999999;  @include font-size(1.2); padding:0px 0px 5% 4%; display:block; clear:both;}
+    a.pdfLink { padding-left: 43px;
+      @include media ($mobile) {padding:0px;}}
+    .dl {  width: auto; float: none; padding: 0; margin: 0; display: inline-block;}
+    span {  width: 60%; @include font-size(1.2); line-height:20px; display:inline-block; }
+    &:hover{ border-top:1px solid $lightblue;  border-bottom:1px solid $lightblue;  border-right:1px solid $lightblue;}
+    .top {background:$white; position: relative; cursor:pointer!important; border-radius: 5px; background-size: 4%; background-position: 97%;  padding:5% 0% 3% 4%;}
+    .top-data {padding:0px 0px 0px 4%;
+      @include media ($mobile) {display:none;}}
+    .top-data.mobile {padding:0px 0px 0px 4%;
+      .entry-options {float:left;}
+      form {float:left; margin-left:0; margin-right:1.5%;
+        @include media ($mobile) { float:none;}}
+      .eventstatus {text-align:right;}
+        @include media ($mobile) { display:block!important; position:relative; height:auto; overflow:hidden;
+        .part {float:none; width:100%; height: auto; position: relative; top: 0; left: 0; right: 0; bottom: 0;} }}
+    .top.active { background: $white center right; background-position: 97% 8%; background-size: 2.5%;}
+    .bottom { display: none; width:100%;
+      .continue {padding:0px 4% 4% 4%;
+        a { padding: 10px 0px 0px 0px;}}
+      li {@include span-columns(12); cursor:pointer; background:$white; float:none;   padding: 3% 5% 3% 4%; border-left: solid 5px white; border-bottom:1px solid $grey; margin-left: -3px; z-index: 999999999; display: block; height:auto; list-style-type:none; transition: all 0.5s ease; 
+            @include media ($mobile) { padding: 3% 5% 10% 4%; }
+        &:hover{background:$grey;}}} 
+        .top-data .eventstatus {  position: absolute; top: 25px; right: 30px; float:none;}
+        .eventstatus i {   background: url(../images/statusicons.png) 0px -6px no-repeat; width: 34px; height: 20px; display: block; background-size:  26px 120px; float: right; }
+        .eventstatus.Pending i {   background-position:0px -77px;}
+        .eventstatus.Received i {   background-position:0px -28px;}
+        .eventstatus.Na i {   background-position:0px -33px;}
+        .eventstatus.Approved i {   background-position:0px 0px;}
+        .eventstatus.Denied i {   background-position:0px -52px;}
+        .eventstatus {   text-align: right;
+            @include media ($mobile) { text-align: left!important; padding: 10px 0px 10px 0px; width: 130px!important;}}
+        .eventtype-title {  position: absolute; top: 7px; left: 8px; font-size: 10px;}
+        .entry-options { float:right; margin-right:6%; width:100%;} 
+    form {float:right; margin-left:1.5%;}
+    .child form {float:none; margin: 0px;}
+    button { padding:0px; box-shadow: none; background: none; border: none; font-weight:100;  -webkit-appearance: none; color:$lightblue;  @include font-size(1.2);
+      @include media ($mobile) {padding-left:0px;}}
+    ul {list-style-type:none; 
+      li {@include span-columns(11); cursor:pointer; float:none; padding: 25px; border-left: solid 5px white; margin-left: -3px; z-index: 999999999; display: block; height:auto; list-style-type:none; margin-left:20px; 
+        strong {margin-right:15px;}
+        a {color:$lightblue; float:right;
+          @include media ($mobile) {float:left; padding-left:0px;}}
+        i {background:url(../images/download.png) no-repeat; display:block; width:40px; height:30px; background-size:40px 30px; float:right;}}
+    }
+    h4 {color:$black; height: 30px;}}
+
+
+
+    .athletic, .eventtype1 {border-left:5px solid  $lightblue; }
+    .artfair, .eventtype2 {border-left:5px solid $yellow; }
+    .blockparty, .eventtype3 {border-left:5px solid $green; }
+    .concert, .eventtype4 {border-left:5px solid $pink; }
+    .festival, .eventtype5 {border-left:5px solid  $black; }
+    .film, .eventtype6 {border-left:5px solid $darkgrey; }
+    .parade, .eventtype7 {border-left:5px solid  $navyblue; }
+    .race, .eventtype8 {border-left:5px solid  $red; }
+    .promotion, .eventtype9 {border-left:5px solid $purple; }
+    .smallpark, .eventtype10 {border-left:5px solid $lightorange; }
+    .other, .eventtype11  {border-left:5px solid  $darkblue; }
+    
+    .eventtype-title1 {color:$lightblue; }
+    .eventtype-title2 {color: $yellow; }
+    .eventtype-title3 {color: $green; }
+    .eventtype-title4 {color: $pink; }
+    .eventtype-title5 {color:$black; }
+    .eventtype-title6 {color:$darkgrey; }
+    .eventtype-title7 {color:$navyblue; }
+    .eventtype-title8 {color: $red; }
+    .eventtype-title9 {color: $purple; }
+    .eventtype-title10 {color: $lightorange; }
+    .eventtype-title11  {color:$darkblue; }
+
+    .cal-filter {margin:10px 0px 10px 0px; height:auto; overflow:hidden;
+      h5 {margin-bottom:8px;}
+      li {float:left; @include font-size(1.1); margin:5px 10px 0px 0px;
+        i { display:block; border-radius: 10px; padding: 5px; width: 5px; float:left; margin:2px 8px 0px 0px}}}
+    .filter { margin: 11% 0px 0px 2%!important;   border-left: 1px solid $lightgray; padding-left: 60px;
+      @include media ($tablet) {padding-left:2%; margin:11% 0px 0px 0px;}
+        .eventstatus i {   background: url(../images/statusicons.png) 0px -6px no-repeat; width: 34px; height: 20px; display: block; background-size:  26px 120px; float: left; }
+        .eventstatus.Pending i {   background-position:0px -77px;}
+        .eventstatus.Received i {   background-position:0px -28px;}
+        .eventstatus.Na i {   background-position:0px -99px;}
+        .eventstatus.Approved i {   background-position:0px 0px;}
+        .eventstatus.Denied i {   background-position:0px -52px;}
+      ul {padding-bottom:8px; margin:8% 0px 0px 0px;
+        li {padding-bottom:8px; transition: all 0.5s ease;
+          i { display:block; border-radius: 10px; padding: 5px; width: 5px; float:left; margin:2px 8px 0px 0px}}}
+      }
+
+    .eventtype-filter1 {background:$lightblue;}
+    .eventtype-filter2 {background:$yellow;}
+    .eventtype-filter3 {background:$green;}
+    .eventtype-filter4 {background:$pink;}
+    .eventtype-filter5 {background:$black;}
+    .eventtype-filter6 {background:$darkgrey;}
+    .eventtype-filter7 {background:$navyblue;}
+    .eventtype-filter8 {background:$red;}
+    .eventtype-filter9 {background:$purple;}
+    .eventtype-filter10 {background:$lightorange;}
+    .eventtype-filter11 {background:$darkblue;}
+
+}

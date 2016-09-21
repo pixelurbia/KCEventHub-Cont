@@ -1,0 +1,26 @@
+//Home Page Styles
+//City Permit Project
+@import 'global';
+
+
+.overview { 
+	.event {overflow:hidden; margin-top:10px;}}
+
+.events-page {
+
+  .content { margin:0 auto; float:none;}
+  
+  .event {  @include span-columns(12); float:none; border-radius:3px; padding:3% 9% 3% 5%; margin-bottom:10px; background:$lightblue;
+    .top {background:url(../images/faq-arrow.png) no-repeat $lightblue center right; position: relative; cursor:pointer!important; border-radius: 5px; background-size: 4%; background-position: 97%;}
+    .top.active { background:url(../images/faq-horz-arrow.png) no-repeat $lightblue center right; background-position: 97% 8%; background-size: 2.5%;}
+    .bottom { display: none; width:100%; }
+    form {float:right;}
+    button {  box-shadow: none; background: none; border: none;   -webkit-appearance: none; color:$lightblue;}
+    ul {list-style-type:none; 
+      li {@include span-columns(11);   margin-bottom: 10px;  background:$white;  float:none; border-radius:3px; padding:20px; height:auto; list-style-type:none; margin-left:20px; 
+        strong {margin-right:15px;}
+        i {background:url(../images/download.png) no-repeat; display:block; width:40px; height:30px; background-size:40px 30px; float:right;}}
+    }
+    h3 {color:$white; height: 30px;}}
+
+}
